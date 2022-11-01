@@ -5,7 +5,7 @@ import apiai, codecs, json
 class chatS(Client):
     
     def apiaiCon(self):
-        self.CLIENT_ACCESS_TOKEN = "Access token code"
+        self.CLIENT_ACCESS_TOKEN = "37c957072f6a80c6235115d3db7e774205b7c674"
         self.ai = apiai.ApiAI(self.CLIENT_ACCESS_TOKEN)
         self.request = self.ai.text_request()
         self.request.lang = 'en'
@@ -34,5 +34,5 @@ class chatS(Client):
 
         self.markAsDelivered(author_id, thread_id)
 
-Client = chatS("email", "password")
+Client = chatS("abhishek8287792920@gmail.com", "@Kojou8447792636")
 Client.listen()
